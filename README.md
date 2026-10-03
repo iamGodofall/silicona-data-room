@@ -58,7 +58,8 @@ The platform achieved its current evidence corpus inside a constrained developme
 ---
 
 ## 5. Video Demonstration
-**[Link to 90-Second Raw Terminal Demo]**
+**[Below 90-Second Raw Terminal Demo](https://www.youtube.com/watch?v=1SfKJ0iRbfQ)**
+
 *No voiceover. No marketing. Just the dashboard, the 177 evaluations (including the 51 HTTP-429 failures), the terminal executing OpenROAD, and the final DRC 0 / LVS MATCH output.*
 
 ---
@@ -66,6 +67,6 @@ The platform achieved its current evidence corpus inside a constrained developme
 ## Contact & Partnerships
 We are executing **Phase B** of our Cross-Provider Measurement Campaign. We are looking for technical partners to sponsor the compute tiers outlined in our BOM to benchmark hardware/models against our deterministic EDA gates.
 
-**Themba Enock Mpehle** | Founder, Enock Labs  
-📧 founder@silicona.dev  
+**Themba Enock Mpehle** | Founder, Enock Labs  \
+📧 founder@silicona.dev  \
 🌍 South Africa (Operating globally)
