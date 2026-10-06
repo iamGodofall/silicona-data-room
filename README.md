@@ -10,6 +10,8 @@ The repository is designed for engineers, EDA practitioners, cloud and compute p
 
 This repository is a versioned public evidence snapshot. The current package is ER-2026-09-30-01, based on measurements dated 30 September 2026. See [Release Status](./docs/00_RELEASE_STATUS.md) before relying on any figure.
 
+For post-snapshot software qualification and launch-hardening progress, see [07 Post-Snapshot Software Readiness](./docs/07_Post_Snapshot_Software_Readiness_2026-10-06.md). This is contextual engineering progress, not a replacement public evidence release.
+
 1. Watch the raw terminal demonstration
 2. Read the Technical Evidence Dossier
 3. Read the Benchmark Protocol
