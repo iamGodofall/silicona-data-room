@@ -41,6 +41,34 @@ jobs:
             echo "OK"
           done
 
+
+
+      - name: Verify release manifest
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path("RELEASE_MANIFEST.json").read_text())
+          assert manifest["release_id"] == "ER-2026-09-30-01"
+          assert manifest["snapshot_date"] == "2026-09-30"
+
+          expected = {
+              "docs/01_Technical_Evidence_Dossier.pdf": 108353,
+              "docs/02_Investor_Brief.pdf": 103855,
+              "docs/03_Benchmark_Protocol_v1.pdf": 165493,
+              "docs/04_Competitor_Intelligence_v1.pdf": 214635,
+          }
+
+          actual = {item["path"]: item["bytes"] for item in manifest["documents"]}
+          assert actual == expected
+
+          for path, size in expected.items():
+              assert Path(path).stat().st_size == size, (path, Path(path).stat().st_size, size)
+          print("release manifest matches tracked PDF sizes")
+          PY
+
       - name: Verify internal links
         run: |
           set -euo pipefail
