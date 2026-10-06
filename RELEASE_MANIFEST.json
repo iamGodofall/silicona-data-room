@@ -1,0 +1,28 @@
+{
+  "release_id": "ER-2026-09-30-01",
+  "snapshot_date": "2026-09-30",
+  "control_review_date": "2026-10-06",
+  "documents": [
+    {
+      "path": "docs/01_Technical_Evidence_Dossier.pdf",
+      "git_blob_sha1": "3d49ee012f26a180abf390c13dffe3234023d174",
+      "bytes": 108353
+    },
+    {
+      "path": "docs/02_Investor_Brief.pdf",
+      "git_blob_sha1": "7fb4b476ba884f2ad1809dc6882625f8ccc93150",
+      "bytes": 103855
+    },
+    {
+      "path": "docs/03_Benchmark_Protocol_v1.pdf",
+      "git_blob_sha1": "bc54fce304291a1efcc28484873bd1b5f7fc855c",
+      "bytes": 165493
+    },
+    {
+      "path": "docs/04_Competitor_Intelligence_v1.pdf",
+      "git_blob_sha1": "29c7b92da4736e65bec24541511461ad9e8cecea",
+      "bytes": 214635
+    }
+  ],
+  "integrity_note": "Git blob SHA-1 values identify the committed objects. GitHub Actions also computes SHA-256 checksums for every PDF during release validation."
+}
