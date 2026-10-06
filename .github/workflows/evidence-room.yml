@@ -1,0 +1,70 @@
+name: SILICONA Public Evidence Room
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Require release files
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f docs/00_RELEASE_STATUS.md
+          test -f docs/01_Technical_Evidence_Dossier.pdf
+          test -f docs/02_Investor_Brief.pdf
+          test -f docs/03_Benchmark_Protocol_v1.pdf
+          test -f docs/04_Competitor_Intelligence_v1.pdf
+          test -f docs/05_CLAIM_POLICY.md
+          test -f SECURITY.md
+
+      - name: Verify PDF signatures
+        run: |
+          set -euo pipefail
+          for f in docs/*.pdf; do
+            printf '%s: ' "$f"
+            head -c 5 "$f" | grep -q '^%PDF-' || {
+              echo "invalid PDF signature"
+              exit 1
+            }
+            echo "OK"
+          done
+
+      - name: Verify internal links
+        run: |
+          set -euo pipefail
+          grep -Fq './docs/01_Technical_Evidence_Dossier.pdf' README.md
+          grep -Fq './docs/02_Investor_Brief.pdf' README.md
+          grep -Fq './docs/03_Benchmark_Protocol_v1.pdf' README.md
+          grep -Fq './docs/04_Competitor_Intelligence_v1.pdf' README.md
+          grep -Fq './docs/00_RELEASE_STATUS.md' README.md
+
+      - name: Scan tracked text for credential patterns
+        run: |
+          set -euo pipefail
+          if git grep -nEI '(BEGIN (RSA|EC|OPENSSH|PRIVATE) KEY|AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9_]{20,}|sk_(live|test)_[A-Za-z0-9]+|xox[baprs]-[A-Za-z0-9-]+)' -- '*.md'; then
+            echo "credential-like material found in tracked markdown" >&2
+            exit 1
+          fi
+
+      - name: Produce release checksums
+        run: |
+          set -euo pipefail
+          sha256sum docs/*.pdf | tee /tmp/silicona-evidence-sha256.txt
+
+      - name: Print release identity
+        run: |
+          printf 'commit=%s\n' "$GITHUB_SHA"
+          printf 'release=ER-2026-09-30-01\n'
+          printf 'snapshot=2026-09-30\n'
