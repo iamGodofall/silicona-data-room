@@ -8,10 +8,12 @@ The repository is designed for engineers, EDA practitioners, cloud and compute p
 
 ## Start Here
 
+This repository is a versioned public evidence snapshot. The current package is ER-2026-09-30-01, based on measurements dated 30 September 2026. See [Release Status](./docs/00_RELEASE_STATUS.md) before relying on any figure.
+
 1. Watch the raw terminal demonstration
 2. Read the Technical Evidence Dossier
 3. Read the Benchmark Protocol
-4. Review the measured state below
+4. Review the dated measured state below
 5. Review the infrastructure requirements
 6. Contact SILICONA for partner or compute discussions
 
@@ -61,7 +63,9 @@ Engineer Approves
 
 Policy-controlled gates define where automation is permitted and where engineering approval is required.
 
-## Current Measured State
+## Public Snapshot: 30 September 2026
+
+The table below is a dated evidence snapshot, not a live production dashboard.
 
 The figures below describe the current evidence corpus and the demonstrated SKY130 open-PDK reference flow. The evidence snapshot referenced by the current dossiers is dated 30 September 2026.
 
@@ -142,7 +146,7 @@ A technical reviewer should be able to move through the evidence in this order:
 
 README → Technical Evidence Dossier → Benchmark Protocol → Raw Terminal Demo → artifact and run records → reproduction environment
 
-The current public room provides the first four layers. Expanding the public machine-readable artifact manifest and reproducible environment is part of the next evidence-room development phase.
+The current public room provides the first four layers. Release integrity controls are now automated through GitHub Actions. Expanding the public machine-readable artifact manifest and reproducible environment remains part of the next evidence-room development phase.
 
 ## Partner and Compute Program
 
@@ -165,6 +169,10 @@ Partner discussions are focused on measurable workloads and reproducible evidenc
 This repository contains evaluation data, methodology, benchmark material, infrastructure planning, and diligence documents.
 
 The core SILICONA orchestration engine, agentic routing logic, and proprietary implementation remain private.
+
+## Release controls
+
+See [Claim Policy](./docs/05_CLAIM_POLICY.md). Public changes are expected to preserve dated evidence, explicit limitations, reproducibility information, and negative results.
 
 ## Contact
 
