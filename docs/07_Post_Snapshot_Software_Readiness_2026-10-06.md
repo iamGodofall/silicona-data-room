@@ -36,6 +36,12 @@ Fresh local qualification on the DreamStation engineering host produced:
 
 The SDK smoke was executed against a standalone production build through HTTP using a disposable database copy upgraded to the current schema. Real authentication, project operations, reference FIFO artifact reads, experiment reads, error handling, retry behavior, quota behavior, and cleanup all passed.
 
+## Security patch status
+
+The Next.js 16.x security gate is now satisfied. SILICONA is pinned to Next.js 16.3.8, the Active LTS 16.x security release. The production standalone launcher executes the generated server with Node.js rather than Bun. Fresh qualification on DreamStation recorded a successful production build, 25/25 SDK smoke checks, and 23/23 adversarial security checks. citeturn671566search1turn671566search2
+
+This software qualification does not alter the separate external-infrastructure gates.
+
 ## Defects discovered during qualification
 
 The hardening run found concrete implementation defects and repaired them before merge.
