@@ -20,6 +20,8 @@ For the current commercial policy, including self-service versus managed plans a
 
 For the stage-aware engineering workspace, live stage transitions, evidence presentation, execution-price disclosure and AI provider experience, see [12 Product Experience Standard](./docs/12_Product_Experience_Standard_2026-10-07.md).
 
+For post-snapshot release qualification, technical license-review controls, dependency evidence and the current production-gate boundary, see [13 Release Qualification State](./docs/13_Release_Qualification_State_2026-10-07.md).
+
 1. Watch the raw terminal demonstration
 2. Read the Technical Evidence Dossier
 3. Read the Benchmark Protocol
