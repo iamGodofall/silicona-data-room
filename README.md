@@ -18,6 +18,8 @@ For the external infrastructure, startup-program, partner and validation roadmap
 
 For the current commercial policy, including self-service versus managed plans and the execution-credit rate card, see [11 Commercial Pricing Standard](./docs/11_Commercial_Pricing_Standard_2026-10-07.md).
 
+For the stage-aware engineering workspace, live stage transitions, evidence presentation, execution-price disclosure and AI provider experience, see [12 Product Experience Standard](./docs/12_Product_Experience_Standard_2026-10-07.md).
+
 1. Watch the raw terminal demonstration
 2. Read the Technical Evidence Dossier
 3. Read the Benchmark Protocol
@@ -112,6 +114,7 @@ Post-route SPEF extraction and signoff-grade IR-drop are not claimed by this evi
 | [04 Competitor Intelligence v1](./docs/04_Competitor_Intelligence_v1.pdf) | Source-based review of the agentic EDA market | Market analysts, strategic partners |
 | [10 External Infrastructure Program Matrix](./docs/10_External_Infrastructure_Program_Matrix_2026-10-07.md) | Current cloud/startup infrastructure routes, eligibility notes and execution order | Cloud partners, accelerators, infrastructure reviewers |
 | [11 Commercial Pricing Standard](./docs/11_Commercial_Pricing_Standard_2026-10-07.md) | Current platform subscriptions, execution-credit model and certification offer | Customers, partners, diligence reviewers |
+| [12 Product Experience Standard](./docs/12_Product_Experience_Standard_2026-10-07.md) | Stage-aware workspace, evidence UX, execution disclosure and AI provider experience | Customers, EDA partners, technical reviewers |
 
 ## Raw Demonstration
 
