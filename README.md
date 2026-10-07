@@ -16,6 +16,8 @@ For worker execution isolation and resource-enforcement qualification, see [08 W
 
 For the external infrastructure, startup-program, partner and validation roadmap, see [09 External Validation Roadmap](./docs/09_External_Validation_Roadmap_2026-10-07.md). This is an execution roadmap, not evidence of program acceptance, production operation or customer validation.
 
+For the current commercial policy, including self-service versus managed plans and the execution-credit rate card, see [11 Commercial Pricing Standard](./docs/11_Commercial_Pricing_Standard_2026-10-07.md).
+
 1. Watch the raw terminal demonstration
 2. Read the Technical Evidence Dossier
 3. Read the Benchmark Protocol
