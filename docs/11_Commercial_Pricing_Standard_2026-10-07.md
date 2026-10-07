@@ -51,7 +51,7 @@ The launch rate card is versioned as 2026-10-07.v1:
 
 The execution class is selected by the server from the job type. Clients do not set or override the customer charge.
 
-Credits are reserved before execution admission. Successful or failed execution that reaches settlement consumes the reserved allowance. A request rejected before admission does not consume credits.
+Credits are reserved before execution admission. Successful execution consumes the reserved allowance. Failed or cancelled execution releases the reservation. A request rejected before admission does not consume credits. Worker and provider COGS is tracked separately.
 
 The credit allowance is a customer budget, not a provider cost claim. Actual worker, AI, storage and EDA cost is recorded separately and replaces planning assumptions as measured workloads accumulate.
 
