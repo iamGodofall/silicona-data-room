@@ -108,6 +108,7 @@ Post-route SPEF extraction and signoff-grade IR-drop are not claimed by this evi
 | [02 Investor Brief](./docs/02_Investor_Brief.pdf) | Financing scenarios, business model progression, risks, and evidence-linked milestones | Deep-tech investors, strategic partners |
 | [03 Benchmark Protocol v1](./docs/03_Benchmark_Protocol_v1.pdf) | Measurement rules, pinned toolchains, seeds, negative-result handling, and benchmark distributions | AI researchers, benchmark reviewers |
 | [04 Competitor Intelligence v1](./docs/04_Competitor_Intelligence_v1.pdf) | Source-based review of the agentic EDA market | Market analysts, strategic partners |
+| [10 External Infrastructure Program Matrix](./docs/10_External_Infrastructure_Program_Matrix_2026-10-07.md) | Current cloud/startup infrastructure routes, eligibility notes and execution order | Cloud partners, accelerators, infrastructure reviewers |
 
 ## Raw Demonstration
 
