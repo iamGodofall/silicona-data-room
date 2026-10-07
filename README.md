@@ -14,6 +14,8 @@ For post-snapshot software qualification and launch-hardening progress, see [07 
 
 For worker execution isolation and resource-enforcement qualification, see [08 Worker Resource Isolation](./docs/08_Worker_Resource_Isolation_2026-10-07.md). This is also contextual software progress, not a replacement benchmark release.
 
+For the external infrastructure, startup-program, partner and validation roadmap, see [09 External Validation Roadmap](./docs/09_External_Validation_Roadmap_2026-10-07.md). This is an execution roadmap, not evidence of program acceptance, production operation or customer validation.
+
 1. Watch the raw terminal demonstration
 2. Read the Technical Evidence Dossier
 3. Read the Benchmark Protocol
