@@ -12,6 +12,8 @@ This repository is a versioned public evidence snapshot. The current package is 
 
 For post-snapshot software qualification and launch-hardening progress, see [07 Post-Snapshot Software Readiness](./docs/07_Post_Snapshot_Software_Readiness_2026-10-06.md). This is contextual engineering progress, not a replacement public evidence release.
 
+For worker execution isolation and resource-enforcement qualification, see [08 Worker Resource Isolation](./docs/08_Worker_Resource_Isolation_2026-10-07.md). This is also contextual software progress, not a replacement benchmark release.
+
 1. Watch the raw terminal demonstration
 2. Read the Technical Evidence Dossier
 3. Read the Benchmark Protocol
